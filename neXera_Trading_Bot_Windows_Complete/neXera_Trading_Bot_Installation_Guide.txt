@@ -1,0 +1,52 @@
+neXera Trading Platform - Windows Installation Guide
+=================================================
+
+Thank you for choosing neXera Trading Platform!
+
+Since this is a Python application with many dependencies, we need to properly set it up on your Windows computer. Follow these simple steps:
+
+STEP 1: INSTALL PYTHON
+----------------------
+1. Download and install Python 3.10 or higher from https://www.python.org/downloads/
+2. During installation, make sure to check "Add Python to PATH"
+3. Complete the installation and restart your computer
+
+STEP 2: SET UP THE APPLICATION
+------------------------------
+1. Extract the full crypto_system_backup_20250418_112935.zip file to a folder on your computer
+2. Open Command Prompt (search for "cmd" in the Start menu)
+3. Navigate to the folder where you extracted the files using:
+   cd path\to\extracted\folder
+4. Install the required packages:
+   pip install -r requirements.txt
+
+STEP 3: CREATE THE EXECUTABLE
+-----------------------------
+1. After installing the dependencies, run:
+   python create_nexera_exe.py
+2. This will create a Windows executable file in the "dist" folder
+3. The executable creation process may take a few minutes
+4. Once completed, you'll find neXera_Trading_Bot.exe in the dist folder
+
+STEP 4: RUN THE APPLICATION
+---------------------------
+1. Double-click on the neXera_Trading_Bot.exe file
+2. The application will start and open in your browser automatically
+3. The web interface will be available at http://localhost:5000
+
+TROUBLESHOOTING
+---------------
+If you encounter any issues:
+1. Make sure Python is installed correctly and added to your PATH
+2. Ensure all dependencies are installed using: pip install -r requirements.txt
+3. Try running the application directly with: python run_bot.py
+
+For additional help, please contact support.
+
+IMPORTANT NOTE
+-------------
+This application runs in Paper Trading mode by default, so no real funds are at risk.
+To use real trading, you will need to provide exchange API keys with Trade permission.
+
+=================================================
+neXera Trading Platform v1.0.0

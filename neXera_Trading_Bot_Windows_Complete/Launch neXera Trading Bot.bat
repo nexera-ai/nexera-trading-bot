@@ -1,0 +1,3 @@
+@echo off
+echo Starting neXera Trading Platform...
+start "" "neXera_Trading_Bot.exe"
